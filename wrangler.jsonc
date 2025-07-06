@@ -18,7 +18,8 @@
 	  }
 	],
 	"vars": {
-	  "MY_DOMAIN": "tienshan.edu.kg"
+	  "MY_DOMAIN": "tienshan.edu.kg",
+      "ADMIN_UUID": "6242a64b-a151-4531-820b-2009899775cd"
 	}
 	/**
 	 * Smart Placement
