@@ -218,7 +218,7 @@ function generateAppHtml(domain) {
 						<li onclick="showEmail(\${index})" class="p-4 cursor-pointer hover:bg-slate-50 transition-colors" data-index="\${index}">
 							<div class="flex justify-between items-center">
 								<p class="font-semibold text-slate-800 text-sm truncate">\${escapeHtml(email.from_address)}</p>
-								<p class="text-xs text-slate-400">\${new Date(email.received_at).toLocaleString('zh-CN')}</p>
+                                <p class="text-xs text-slate-400">\${new Date(email.received_at.replace(' ', 'T') + 'Z').toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}</p>
 							</div>
 							<p class="text-sm text-slate-600 truncate">\${escapeHtml(email.subject)}</p>
 						</li>
